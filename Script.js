@@ -518,12 +518,12 @@ if (viewer) {
 
       controls.update();
 
-     const loadingMessage =
-  viewer.querySelector('.viewer-loading');
+      const loading =
+        viewer.querySelector('.viewer-loading');
 
-if (loadingMessage) {
-  loadingMessage.remove();
-}
+      if (loading) {
+        loading.remove();
+      }
       const hint =
         document.createElement('div');
 
