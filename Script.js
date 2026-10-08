@@ -441,9 +441,9 @@ if (viewer) {
 
   const loading = document.createElement('div');
 
-loadingMessage.className = 'viewer-loading';
-loadingMessage.textContent = '🦴 Loading 3D Skeleton... Please wait.';
-viewer.appendChild(loadingMessage);
+loading.className = 'viewer-loading';
+loading.textContent = '🦴 Loading 3D Skeleton... Please wait.';
+viewer.appendChild(loading);
 
  loader.load('./Human%20skeleton.glb',
 
