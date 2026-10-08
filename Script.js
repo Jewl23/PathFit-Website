@@ -524,12 +524,12 @@ viewer.appendChild(loadingMessage);
 
       controls.update();
 
-      const loading =
-        viewer.querySelector('.viewer-loading');
+     const loadingMessage =
+  viewer.querySelector('.viewer-loading');
 
-      if (loading) {
-        loading.remove();
-      }
+if (loadingMessage) {
+  loadingMessage.remove();
+}
       const hint =
         document.createElement('div');
 
