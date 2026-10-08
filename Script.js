@@ -1,4 +1,3 @@
-console.log("SCRIPT IS RUNNING");
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
@@ -439,13 +438,8 @@ if (viewer) {
 
   const loader = new GLTFLoader();
 
-  const loading = document.createElement('div');
-
-loading.className = 'viewer-loading';
-loading.textContent = '🦴 Loading 3D Skeleton... Please wait.';
-viewer.appendChild(loading);
-
- loader.load('./Human%20skeleton.glb',
+  loader.load(
+    './models/Human%20skeleton.glb',
 
     (gltf) => {
 
@@ -590,7 +584,6 @@ if (placeholder) {
 
   resizeObserver.observe(viewer);
 
-  resizeViewer();
   function updateAnatomyLabels() {
 
   if (!labelElements.length) return;
