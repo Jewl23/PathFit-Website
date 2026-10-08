@@ -584,6 +584,7 @@ if (placeholder) {
 
   resizeObserver.observe(viewer);
 
+  resizeViewer();
   function updateAnatomyLabels() {
 
   if (!labelElements.length) return;
