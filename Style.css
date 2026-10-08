@@ -1158,3 +1158,26 @@ a {
 #about {
     border-top: none !important;
 }
+.viewer-loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 20;
+    text-align: center;
+}
+
+.viewer-loading span {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+}
