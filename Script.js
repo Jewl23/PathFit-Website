@@ -439,6 +439,12 @@ if (viewer) {
 
   const loader = new GLTFLoader();
 
+  const loading = document.createElement('div');
+
+loadingMessage.className = 'viewer-loading';
+loadingMessage.textContent = '🦴 Loading 3D Skeleton... Please wait.';
+viewer.appendChild(loadingMessage);
+
  loader.load('./Human%20skeleton.glb',
 
     (gltf) => {
