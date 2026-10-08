@@ -438,8 +438,7 @@ if (viewer) {
 
   const loader = new GLTFLoader();
 
-  loader.load(
-    './models/Human%20skeleton.glb',
+ loader.load('./Human%20skeleton.glb',
 
     (gltf) => {
 
